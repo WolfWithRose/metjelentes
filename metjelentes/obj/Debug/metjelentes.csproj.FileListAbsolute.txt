@@ -5,3 +5,10 @@ C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelent
 C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.csproj.CoreCompileInputs.cache
 C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.exe
 C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.pdb
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\bin\Debug\metjelentes.exe.config
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\bin\Debug\metjelentes.exe
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\bin\Debug\metjelentes.pdb
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\obj\Debug\metjelentes.csprojAssemblyReference.cache
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\obj\Debug\metjelentes.csproj.CoreCompileInputs.cache
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\obj\Debug\metjelentes.exe
+D:\Kussa Richárd\Érettségi\Meteorológiai jelentés\metjelentes\metjelentes\obj\Debug\metjelentes.pdb

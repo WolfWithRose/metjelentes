@@ -40,6 +40,64 @@ namespace metjelentes
                 Adat.lista.Add(a);
             }
             Console.WriteLine(Adat.lista.Count);
+            
+            Console.Write("2. feladat \nAdja meg a település kódját! Település: ");
+            string user_telepules = Console.ReadLine();
+
+            // hagyományos megoldás:
+            // keressük hátulról nézve az első rekordot, aminek a user_telepules a települése
+
+            int i = Adat.lista.Count - 1;
+            while (0<=i && !(Adat.lista[i].telepules == user_telepules))
+            {
+                i--;
+            }
+            if (i!=-1)
+            {
+                Console.WriteLine($"Az utolsó mérési adat a megadott településről {Adat.lista[i].ora}:{Adat.lista[i].perc}-kor érkezett.");
+            }
+            else
+            {
+                Console.WriteLine("Ilyen település nincsen!");
+            }
+            // 2. feladat: linq-kel
+            {
+                Adat az = Adat.lista.Last(a => a.telepules == user_telepules);
+                //Console.WriteLine($"{az.ora}:{az.perc}");
+
+                // 2. feladat DateTime-al
+                //Console.WriteLine($"{az.dt.ToString(@"HH:mm")}");
+            }
+
+            // 3. feladat: MIN-MAX
+            Console.WriteLine("3. feladat");
+            int legnagyobb = Adat.lista.Max(a => a.homerseklet);
+            int legkisebb = Adat.lista.Min(a => a.homerseklet);
+            Adat b = Adat.lista.First(a => a.homerseklet == legkisebb);
+            Adat c = Adat.lista.First(a => a.homerseklet == legnagyobb);
+            Console.WriteLine($"A legalacsonyabb hőmérséklet: {b.telepules} {b.dt.ToString(@"HH:mm")} {b.homerseklet} fok.");
+            Console.WriteLine($"A legnagyobb hőmérséklet: {c.telepules} {c.dt.ToString(@"HH:mm")} {c.homerseklet} fok.");
+
+            // 3. feladat: ORDERBY
+            {
+                var rendezett = Adat.lista.OrderBy(a => a.homerseklet);
+                //Console.WriteLine($"A legalacsonyabb hőmérséklet: {rendezett.First().telepules} {rendezett.First().dt.ToString(@"HH:mm")} {rendezett.First().homerseklet} fok.");
+                //Console.WriteLine($"A legnagyobb hőmérséklet: {rendezett.Last().telepules} {rendezett.Last().dt.ToString(@"HH:mm")} {rendezett.Last().homerseklet} fok.");
+            }
+
+            Console.WriteLine("4. feladat");
+            int db = 0;
+            foreach (var item in Adat.lista.Where(a => a.szelirany == "000" && a.szelerosseg == "00"))
+            {
+                db++;
+                Console.WriteLine($"{item.telepules} {item.dt.ToString(@"HH:mm")}");
+            }
+            if (db == 0)
+            {
+                Console.WriteLine("Nem volt szélcsend a mérések idején.");
+            }
+
+            // 5. feladat GROUPBY de Dictionary-vel!
         }
     }
 }
