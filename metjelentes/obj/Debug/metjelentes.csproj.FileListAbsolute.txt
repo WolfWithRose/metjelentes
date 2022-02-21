@@ -1,0 +1,7 @@
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\bin\Debug\metjelentes.exe.config
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\bin\Debug\metjelentes.exe
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\bin\Debug\metjelentes.pdb
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.csprojAssemblyReference.cache
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.csproj.CoreCompileInputs.cache
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.exe
+C:\Users\Kussa Richárd\source\repos\metjelentes\metjelentes\obj\Debug\metjelentes.pdb
